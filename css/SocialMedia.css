@@ -1,0 +1,114 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #F3F4F6;
+    height: auto;
+} */
+
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+.icon1{
+  background:  #F3F4F6;
+  display: flex;
+    
+  height: 60px;
+  width: 60px;
+  margin: 0 15px;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.2),
+                -6px -6px 10px -1px rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0);
+  transition: transform 0.31s;
+}
+/*
+a .icon{
+    display: flex;
+    
+    height: 60px;
+    width: 60px;
+    margin: 0 15px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.2),
+                -6px -6px 10px -1px rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0);
+    transition: transform 0.31s;
+
+} */
+a i{
+    font-size: 50px;
+    color: white;
+    transition: transform 0.31s;
+}
+
+a:hover i{
+    transform: scale(0.90);
+}
+
+a:hover .fa-facebook{
+    color: #3b5998;
+}
+a:hover .fa-instagram{
+    color: #f14843;
+}
+a:hover .fa-linkedin{
+    color: #0072b1 ;
+}
+a:hover .fa-discord{
+    color: #7289da;
+}
+a:hover .fa-youtube{
+    color: #f00;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For tablets */
+
+  
+    
+  
+   .image-container a {
+     width: 37.5px;
+     height: 37.5px;
+   }
+   a i{
+    font-size: 19px;
+   }
+
+   
+ }
+ 
+ @media only screen and (max-width: 480px) {
+   /* For mobiles */
+
+  
+ 
+   .image-container a {
+     width: 30px;
+     height: 30px;
+   }
+
+   a i{
+    font-size: 15px;
+   }
+   
+ }
+ 
+ @keyframes rotate {
+   from {
+     transform: rotate(0deg);
+   }
+   to {
+     transform: rotate(360deg);
+   }
+ }
